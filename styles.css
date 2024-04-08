@@ -121,7 +121,7 @@ button:hover {
     border-radius: 5px;
 }
 
-#chat-messages {
+.chat-messages{
     height: 432px;
     overflow-y: scroll;
     border-bottom: 1px solid #ccc;

@@ -63,7 +63,20 @@ function toggleAccordion() {
 }
 
 function displayMessage(message, type) {
-    var chatMessages = document.getElementById("chat-messages");
+
+    // Get the current language of the page
+    const currentLanguage = document.getElementById("language-select").value;
+
+    // Define a map of language codes to resume URLs
+    const inputId = {
+        'en': 'chat-messages-en',
+        'pt': 'chat-messages-pt',
+        'es': 'chat-messages-es'
+    };
+
+    idLanguage = inputId[currentLanguage]
+
+    var chatMessages = document.getElementById(idLanguage);
     var messageDiv = document.createElement("div");
     messageDiv.classList.add("message", type);
     messageDiv.textContent = message;
@@ -72,8 +85,21 @@ function displayMessage(message, type) {
 }
 
 function sendMessage(event) {
+
+    // Get the current language of the page
+    const currentLanguage = document.getElementById("language-select").value;
+
+    // Define a map of language codes to resume URLs
+    const inputId = {
+        'en': 'message-input-en',
+        'pt': 'message-input-pt',
+        'es': 'message-input-es'
+    };
+
+    idLanguage = inputId[currentLanguage]
+
     event.preventDefault();
-    var messageInput = document.getElementById("message-input");
+    var messageInput = document.getElementById(idLanguage);
     var message = messageInput.value.trim();
     console.log(message)
     
