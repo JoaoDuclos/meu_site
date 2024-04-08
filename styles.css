@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    padding-bottom: 20px;
+    /* padding-left: 40px; */
+    padding-top: 10px;
+    text-align: center
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+a:hover {
+    background-color: #0b0c0c;
+}
+
+.content {
+    background-color: #000000;
+    margin: 20px;
+    margin-bottom: 200px;
+}
+
+#language-select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none; /* Hide content by default */
+}
+
+button {
+    padding: 10px 20px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0b0c0c;
+    color: #ffffff;
+}
+
+#chat-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-messages {
+    height: 432px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#message-input {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.message{
+    color: #fff;
+    background-color: #313131;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#chat-input{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

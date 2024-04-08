@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="content-pt" style="display: block;">
+            <header>
+                <h1>João Vitor Borge Duclos</h1>
+                <nav>
+                    <ul>
+                        <li><a href="chatbot.html">ChatBot</a></li>
+                        <li><a onclick="redirectToResume()">Currículo</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#language">Idioma</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="home">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Seção principal</button>
+                    <div class="accordion-content">
+                        <p>Seção principal aqui</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Seção de projetos</button>
+                    <div class="accordion-content">
+                        <p>Seção de projetos aqui</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Seção sobre</button>
+                    <div class="accordion-content">
+                        <p>Seção sobre aqui</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Seção contato</button>
+                    <div class="accordion-content">
+                        <p>Seção contato aqui</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div id="content-en" style="display: none;">
+            <header>
+                <h1>João Vitor Borge Duclos</h1>
+                <nav>
+                    <ul>
+                        <li><a href="chatbot.html">ChatBot</a></li>
+                        <li><a onclick="redirectToResume()">Resume</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#language">Language</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="home">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Home Section</button>
+                    <div class="accordion-content">
+                        <p>Home Section here</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Projects Section</button>
+                    <div class="accordion-content"> 
+                        <p>Projects Section here</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">About Section</button>
+                    <div class="accordion-content">
+                        <p>About Section here</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Contact Section</button>
+                    <div class="accordion-content">
+                        <p>Contact Section here</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <div id="content-es" style="display: none;">
+            <header>
+                <h1>João Vitor Borge Duclos</h1>
+                <nav>
+                    <ul>
+                        <li><a href="chatbot.html">ChatBot</a></li>
+                        <li><a onclick="redirectToResume()">Currículo</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#about">Acerca de João</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#language">Idioma</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="home">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Sección inicio</button>
+                    <div class="accordion-content">
+                        <p>Sección inicio aquí</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Sección proyecto</button>
+                    <div class="accordion-content">
+                        <p>Sección proyecto aquí</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">Sección acerca de João</button>
+                    <div class="accordion-content">
+                        <p>Sección acerca de João aquí</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion()">sección contacto</button>
+                    <div class="accordion-content">
+                        <p>sección contacto aquí</p>
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+        <footer>
+            <p>&copy; 2024 João Vitor Borge Duclos<br><br></p>
+            <div id="language"></Select></h2><select id="language-select" onchange="changeLanguage()">
+                <option value="pt">Portuguese</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <!-- Add more language options as needed -->
+            </select></div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
