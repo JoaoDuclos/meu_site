@@ -4,7 +4,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
-// test
 // navToggle.addEventListener('click', () => {
 //     navMenu.classList.toggle('show');
 // });
@@ -62,44 +61,8 @@ function toggleAccordion() {
     });
 }
 
-function displayMessage(message, type) {
-
-    // Get the current language of the page
-    const currentLanguage = document.getElementById("language-select").value;
-
-    // Define a map of language codes to resume URLs
-    const inputId = {
-        'en': 'chat-messages-en',
-        'pt': 'chat-messages-pt',
-        'es': 'chat-messages-es'
-    };
-
-    idLanguage = inputId[currentLanguage]
-
-    var chatMessages = document.getElementById(idLanguage);
-    var messageDiv = document.createElement("div");
-    messageDiv.classList.add("message", type);
-    messageDiv.textContent = message;
-    chatMessages.appendChild(messageDiv);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
-
-function sendMessage(event) {
-
-    // Get the current language of the page
-    const currentLanguage = document.getElementById("language-select").value;
-
-    // Define a map of language codes to resume URLs
-    const inputId = {
-        'en': 'message-input-en',
-        'pt': 'message-input-pt',
-        'es': 'message-input-es'
-    };
-
-    idLanguage = inputId[currentLanguage]
-
-    event.preventDefault();
-    var messageInput = document.getElementById(idLanguage);
+function sendMessage() {
+    var messageInput = document.getElementById("message-input");
     var message = messageInput.value.trim();
     console.log(message)
     
@@ -136,3 +99,11 @@ function sendMessage(event) {
 //     }
 // }
 
+function displayMessage(message, type) {
+    var chatMessages = document.getElementById("chat-messages");
+    var messageDiv = document.createElement("div");
+    messageDiv.classList.add("message", type);
+    messageDiv.textContent = message;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}

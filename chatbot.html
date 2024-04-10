@@ -14,21 +14,21 @@
                 <h1>João Vitor Borge Duclos</h1>
                 <nav>
                     <ul>
-                        <li><a href="home.html">Cursos</a></li>
+                        <li><a href="#home">Cursos</a></li>
                         <li><a onclick="redirectToResume()">Currículo</a></li>
-                        <li><a href="home.html">Projetos</a></li>
-                        <li><a href="home.html">Sobre</a></li>
-                        <li><a href="home.html">Contato</a></li>
-                        <li><a href="home.html">Idioma</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#language">Idioma</a></li>
                     </ul>
                 </nav>
             </header>
-            <form id="myForm" onsubmit="sendMessage(event)">
+            <form id="myForm">
                 <div class="chat-container">
-                    <div class="chat-messages" id="chat-messages-pt"></div>
+                    <div class="chat-messages" id="chat-messages"></div>
                     <div id="chat-input">
-                        <input type="text" id="message-input-pt" placeholder="Escreva a sua mensagem...">
-                        <button type="submit">enviar</button>
+                        <input type="text" id="message-input" placeholder="Escreva a sua mensagem...">
+                        <button type="submit" onclick="sendMessage()">enviar</button>
                     </div>
                 </div>
             </form>
@@ -49,15 +49,16 @@
                 </nav>
             </header>
 
-            <form id="myForm" onsubmit="sendMessage(event)">
+            <form id="myForm">
                 <div class="chat-container">
-                    <div class="chat-messages" id="chat-messages-en"></div>
+                    <div class="chat-messages" id="chat-messages"></div>
                     <div id="chat-input">
-                        <input type="text" id="message-input-en" placeholder="Type your message...">
-                        <button type="submit">send</button>
+                        <input type="text" id="message-input" placeholder="Type your message...">
+                        <button type="submit" onclick="sendMessage()">send</button>
                     </div>
                 </div>
             </form>
+
         </div>
 
         <div id="content-es" style="display: none;">
@@ -65,22 +66,22 @@
                 <h1>João Vitor Borge Duclos</h1>
                 <nav>
                     <ul>
-                        <li><a href="home.html">Cursos</a></li>
+                        <li><a href="#home">Cursos</a></li>
                         <li><a onclick="redirectToResume()">Currículo</a></li>
-                        <li><a href="home.html">Proyectos</a></li>
-                        <li><a href="home.html">Acerca de João</a></li>
-                        <li><a href="home.html">Contacto</a></li>
-                        <li><a href="home.html">Idioma</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#about">Acerca de João</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#language">Idioma</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <form id="myForm" onsubmit="sendMessage(event)">
+            <form id="myForm">
                 <div class="chat-container">
-                    <div class="chat-messages" id="chat-messages-es"></div>
+                    <div class="chat-messages" id="chat-messages"></div>
                     <div id="chat-input">
-                        <input type="text" id="message-input-es" placeholder="Escribe tu mensaje...">
-                        <button type="submit">enviar</button>
+                        <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
+                        <button type="submit" onclick="sendMessage()">enviar</button>
                     </div>
                 </div>
             </form>
