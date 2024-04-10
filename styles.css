@@ -121,8 +121,11 @@ button:hover {
     border-radius: 5px;
 }
 
-#chat-messages {
+.chat-messages{
     height: 432px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     overflow-y: scroll;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
@@ -144,6 +147,8 @@ button:hover {
     padding: 10px;
     border-radius: 30px;
 }
+
+
 
 #chat-input{
     width: fit-content;
